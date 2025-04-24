@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/z_BaseFiles/Scenes/Scene-SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/spider demo.unity
+    guid: b758bae794a24404dac7d97fa87811e6
+  - enabled: 0
+    path: Assets/_CRE341/Scenes/Death.unity
+    guid: 3fc00208eb5855d428f525f685f9d05d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

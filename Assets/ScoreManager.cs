@@ -18,7 +18,8 @@ public class ScoreManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        scoreText.text = score.ToString() + " POINTS";
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+        scoreText.text = score.ToString() + " FOOD BITES";
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
     }
 
@@ -26,6 +27,8 @@ public class ScoreManager : MonoBehaviour
     public void AddPoint()
     {
         score += 1;
-        scoreText.text = score.ToString() + " POINTS";
+        scoreText.text = score.ToString() + " FOOD BITES";
+        if (highscore < score)
+        PlayerPrefs.SetInt("highscore", score);
     }
 }
