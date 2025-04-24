@@ -32,6 +32,7 @@ public class Collectible : MonoBehaviour
             if (Vector3.Distance(transform.position, player.transform.position) <= collectionRadius)
             {
                 Collect();
+                ScoreManager.instance.AddPoint();
             }
         }
     }

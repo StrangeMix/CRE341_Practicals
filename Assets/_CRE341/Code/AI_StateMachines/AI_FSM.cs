@@ -36,6 +36,7 @@ public class AI_FSM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (fsm_anim.GetCurrentAnimatorStateInfo(0).IsName("Patrol")) 
         {
             Debug.Log("Patrol State");
